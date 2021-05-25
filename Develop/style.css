@@ -141,20 +141,40 @@ button[disabled] {
   overflow: hidden;
 }
 
-@media (max-width: 690px) {
-  .btn {
-    font-size: 1rem;
-    margin: 16px 0px 0px 0px;
-    padding: 10px 15px;
+@media screen and (max-width: 980px) {
+  .btn, .btngen {
+margin: 16px 20px;
+padding: 10px 15px;
   }
+}
 
+@media (max-width: 690px) {
+  .btn, .btngen {
+    font-size: 1rem;
+    margin: 16px 30px;
+    padding: 10px 30px;
+  }
+  .card-footer {
+margin: 16px 50px;
+padding: 10px 50px;
+  }
   #password {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 500px) {
-  .btn {
+  .btn, .btngen {
     font-size: 0.8rem;
+    margin: 5px 5px;
+    padding: 5px 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn, .btngen {
+    font-size: 0.5rem;
+    margin: 5px 0px;
+    padding: 5px 0px;
   }
 }
